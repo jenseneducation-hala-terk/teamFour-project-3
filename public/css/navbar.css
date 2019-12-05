@@ -1,32 +1,34 @@
 @import "reset.css";
-.navbar {
+.navbar-wrapper {
   width: 100%;
-  height: 100px;
+  margin: 0;
+  height: 150px;
   display: flex;
   padding: 0 1rem;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar a.site-logo {
+.navbar-wrapper a.site-logo {
   color: rgb(53, 52, 52);
   text-decoration: none;
 }
 
-.navbar a.site-logo i {
-  font-size: 4rem;
+.navbar-wrapper a.site-logo i {
+  font-size: 5rem;
 }
 
-.navbar ul {
+.navbar-wrapper ul {
   list-style: none;
   display: flex;
+  margin: 0;
 }
 
-.navbar ul a {
+.navbar-wrapper ul a {
   display: block;
   color: #222;
+  font-size: 16px;
   margin: 0 0.5rem;
-  font-size: 1.1rem;
   padding: 5px 20px;
   border-radius: 1px;
   text-decoration: none;
@@ -34,15 +36,29 @@
   border-bottom: 2px solid #fff;
 }
 
-.navbar ul a:hover {
+.navbar-wrapper ul a i {
+  color: #40ba37;
+  margin-left: 0.5rem;
+}
+
+.navbar-wrapper ul a:hover {
   color: #fff;
-  transition: 0.2s;
+  transition: 0.3s;
   background: #40ba37;
   border-bottom: 2px solid #1c8314;
 }
 
-.navbar ul a.active {
+.navbar-wrapper ul a:hover i {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navbar-wrapper ul a.active {
   color: #fff;
   background: #40ba37;
   border-bottom: 2px solid #1c8314;
+}
+
+.navbar-wrapper ul a.active i {
+  color: #fff;
 }
