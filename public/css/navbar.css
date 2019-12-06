@@ -4,7 +4,6 @@
   margin: 0;
   height: 150px;
   display: flex;
-  padding: 0 1rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -28,7 +27,7 @@
   display: block;
   color: #222;
   font-size: 16px;
-  margin: 0 0.5rem;
+  margin-left: 2rem;
   padding: 5px 20px;
   border-radius: 1px;
   text-decoration: none;
