@@ -70,8 +70,13 @@ h1.main-heading {
   background: url("/static/img/slide-03.jpg") no-repeat center/cover;
 }
 
+.right,
+.left {
+  transition: 0.3s;
+}
+
 .grid-container {
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -165,4 +170,5 @@ h1.main-heading {
 .footer p {
   letter-spacing: 1px;
   color: #999;
+  margin: 0;
 }
