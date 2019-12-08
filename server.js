@@ -23,5 +23,4 @@ app.get("/success", (req, res) => {
   res.render("success");
 });
 
-app.listen(3000);
-console.log("Server is running...");
+app.listen(3000, () => console.log("Server is running..."));
