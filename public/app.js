@@ -40,10 +40,10 @@ function validateForm(e) {
         let checkForNumbers = /^[\+\-]?\d*\.?\d+(?:[Ee][\+\-]?\d+)?$/;
         let result = checkForNumbers.test(input.value);
         if (!result) {
-          addError(input, "number is not valid", fieldName);
+          addError(input, "is not valid", fieldName);
           error = true;
         } else if (input.value.length < 10 || input.value.length > 10) {
-          addError(input, "number can only be 10 characters long", fieldName);
+          addError(input, "number must be a 10 - digit number", fieldName);
           error = true;
         }
       } else if (fieldName == "email") {
@@ -58,22 +58,22 @@ function validateForm(e) {
         let exp = /[A-Za-z0-9]+$/;
         let result = exp.test(input.value);
         if (!result) {
-          addError(input, "Only numbers and Letters", fieldName);
+          addError(input, "can only contain numbers and letters", fieldName);
           error = true;
         }
-        if (!(input.value.length > 3 && input.value.length < 9)) {
-          addError(input, "Needs to be between 3-8 characters", fieldName);
+        if (input.value.length < 3 && input.value.length > 9) {
+          addError(input, "needs to be between 3-8 characters", fieldName);
           error = true;
         }
         if ((fieldName == "password") != "password-confirm") {
           let exp = /[A-Za-z0-9]+$/;
           let result = exp.test(input.value);
           if (!result) {
-            addError(input, "Only numbers and Letters", fieldName);
+            addError(input, "can only contain numbers and letters", fieldName);
             error = true;
           }
           if (!(input.value.length > 3 && input.value.length < 9)) {
-            addError(input, "Needs to be between 3-8 characters", fieldName);
+            addError(input, "needs to be between 3-8 characters", fieldName);
             error = true;
           }
         }
