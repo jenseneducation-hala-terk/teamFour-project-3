@@ -20,5 +20,4 @@ app.get("/signin", (req, res) => {
   res.render("signin");
 });
 
-app.listen(3000);
-console.log("Server is running...");
+app.listen(3000, () => console.log("Server is running..."));
