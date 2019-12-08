@@ -1,34 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <script
-      src="https://kit.fontawesome.com/7700e0d7d8.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/static/css/signup.css" />
-    <title>Sign Up - Project 3</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <nav class="navbar-wrapper">
-        <a class="site-logo" href="/"><i class="fab fa-accusoft"></i></a>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li>
-            <a href="/signin">Sign In<i class="fas fa-sign-in-alt"></i></a>
-          </li>
-          <li>
-            <a href="/signup" class="active"
-              >Sign Up<i class="fas fa-user-plus"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://kit.fontawesome.com/7700e0d7d8.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/static/css/signup.css" />
+  <title>Sign Up - Project 3</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar-wrapper">
+      <a class="site-logo" href="/"><i class="fab fa-accusoft"></i></a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li>
+          <a href="/signin">Sign In<i class="fas fa-sign-in-alt"></i></a>
+        </li>
+        <li>
+          <a href="/signup" class="active">Sign Up<i class="fas fa-user-plus"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-banner" id="signup-img">
+      <h1>Sign Up</h1>
     </div>
-  </body>
+    <form action="#" method="post">
+
+      <div class="form-header ">
+        <h1>Register to Teamfour</h1>
+      </div>
+      <div class="form-body ">
+        <label for="fname">
+          First Name
+        </label>
+        <input type="text" name="firstname" id="fname" class="form-control input-block" tabindex="1"
+          autocapitalize="off" autocorrect="off" autofocus="autofocus">
+        <div class="error"></div>
+        </label>
+        <label for="lname">
+          Last Name
+        </label>
+        <input type="text" name="lastname" id="lname" class="form-control input-block" tabindex="1" autocapitalize="off"
+          autocorrect="off" autofocus="autofocus">
+        <div class="error"></div>
+        <label for="phone">
+          Phone
+        </label>
+        <input type="text" name="phone" id="phone" class="form-control input-block" tabindex="1" autocapitalize="off"
+          autocorrect="off" autofocus="autofocus">
+        <div class="error"></div>
+        <label for="email"> E-mail </label>
+        <input type="text" name="email" id="email" class="form-control input-block" tabindex="1" autocapitalize="off"
+          autocorrect="off" autofocus="autofocus">
+        <div class="error"></div>
+        <label for="password">
+          Password <span> ------ </span><a class="label-link" href="#">Forgot password?</a>
+        </label>
+        <input type="password" name="password" id="password" class="form-control  input-block" tabindex="2">
+        <div class="error"></div>
+        <label for="password-confirm"> Confirm Password </label>
+        <input type="password" name="password-confirm" id="password" class="form-control  input-block" tabindex="2">
+        <div class="error"></div>
+        <input type="submit" name="commit" value="Sign up" tabindex="3" class="btn ">
+      </div>
+    </form>
+    <div class="footer">
+      <div class="social-media">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <a class="site-logo" href="/"><i class="fab fa-accusoft"></i></a>
+      <p>&copy;2019. All righs reserved. Made by FWK19S</p>
+    </div>
+  </div>
+  <script src="../static/app.js"></script>
+</body>
+
 </html>
