@@ -29,7 +29,7 @@ form {
 }
 
 .form-header {
-  padding: 20x;
+  padding: 20px;
   text-align: center;
   color: #fff;
   background-color: #829aa8;
@@ -120,7 +120,7 @@ label {
     font-size: 14px;
   }
   form {
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 50%;
   }
 }
