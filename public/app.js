@@ -32,7 +32,7 @@ function validateForm(e) {
       } else if (fieldName == "firstname" || fieldName == "lastname") {
         let checkForNumbers = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
         let result = checkForNumbers.test(input.value);
-        if (result) {
+        if (!result) {
           addError(input, "can't contain any numbers", fieldName);
           error = true;
         }
