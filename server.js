@@ -19,6 +19,9 @@ app.get("/signup", (req, res) => {
 app.get("/signin", (req, res) => {
   res.render("signin");
 });
+app.get("/success", (req, res) => {
+  res.render("success");
+});
 
 app.listen(3000);
 console.log("Server is running...");
