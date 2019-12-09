@@ -8,6 +8,20 @@
   width: 95%;
   margin: 0 auto;
 }
+#success-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+#success-content > div {
+  margin: auto;
+  text-align: center;
+}
+#success-content > div i {
+  color: #40ba37;
+  font-size: 25rem;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
