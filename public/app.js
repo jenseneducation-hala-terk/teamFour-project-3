@@ -10,7 +10,7 @@ const required = [
   "email",
   "comment",
   "password",
-  "password-confirm"
+  "passwordConfirm"
 ];
 form.addEventListener("submit", validateForm);
 
@@ -53,30 +53,26 @@ function validateForm(e) {
           addError(input, "provided is not a valid e-mail address", fieldName);
           error = true;
         }
-      }
-      if (fieldName == "password") {
-        let exp = /[A-Za-z0-9]+$/;
-        let result = exp.test(input.value);
+      } else if (fieldName == "password" || fieldName == "passwordConfirm") {
+        let checkValidPassword = /[A-Za-z0-9]+$/;
+        let result = checkValidPassword.test(input.value);
         if (!result) {
           addError(input, "can only contain numbers and letters", fieldName);
           error = true;
         }
-        if (input.value.length < 3 && input.value.length > 9) {
+        else if (input.value.length < 3 || input.value.length > 9) {
           addError(input, "needs to be between 3-8 characters", fieldName);
           error = true;
         }
-        if ((fieldName == "password") != "password-confirm") {
-          let exp = /[A-Za-z0-9]+$/;
-          let result = exp.test(input.value);
-          if (!result) {
-            addError(input, "can only contain numbers and letters", fieldName);
-            error = true;
-          }
-          if (!(input.value.length > 3 && input.value.length < 9)) {
-            addError(input, "needs to be between 3-8 characters", fieldName);
-            error = true;
-          }
+
+      } else if ((fieldName == "password") && (fieldName == "passwordConfirm")) {
+        const password = fieldName['password']
+        const passwordConfirm = fieldName['passwordConfirm']
+        if (password.value !== passwordConfirm.value) {
+          addError(input, " Passwords need to match", fieldName);
+          error = true;
         }
+
       }
 
       data[fieldName] = input.value;
