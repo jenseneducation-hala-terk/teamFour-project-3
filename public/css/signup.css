@@ -1,15 +1,23 @@
 @import "reset.css";
 @import "navbar.css";
 h1 {
+
   display: block;
   font-size: 2em;
 
   font-weight: bold;
+
+    display: block;
+    font-size: 2em;
+
+    font-weight: bold;
+
 }
 * {
   box-sizing: border-box;
 }
 form {
+
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -26,6 +34,12 @@ form {
 .show-err {
   opacity: 1;
   height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 0em;
+
+
 }
 
 .form-header {
@@ -39,6 +53,7 @@ form {
 }
 
 .form-body {
+
   padding: 20px;
   font-size: 14px;
   background-color: #fff;
@@ -46,6 +61,17 @@ form {
   border-top: 0;
   border-radius: 0 0 3px 3px;
   width: 100%;
+
+   padding:20px ;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #d8dee2;
+    border-top: 0;
+    border-radius: 0 0 3px 3px;
+    width: 100%;
+
+
+
 }
 
 .form-control {
@@ -94,6 +120,7 @@ label {
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
+
 .btn {
   position: relative;
   margin-top: 2%;
@@ -109,6 +136,33 @@ label {
   background-color: #829aa8;
   border: 1px solid #c2c7ca;
   color: #fff;
+
+
+ .btn:hover {
+    background-color: #e6ebf1;
+    background-image: linear-gradient(-180deg,#f0f3f6,#829aa8 90%);
+    background-position: -.5em;
+    border-color: rgba(27,31,35,.35);
+     text-decoration: none;
+     text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  }
+.btn {
+    position: relative;
+    margin-top: 2%;
+   padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+   vertical-align: middle;
+    cursor: pointer;
+  border-radius: .25em;
+     display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #829aa8;
+    border: 1px solid #c2c7ca;
+    color: #fff;
+
 }
 
 .input-block {
@@ -124,3 +178,35 @@ label {
     width: 50%;
   }
 }
+
+}
+.footer {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer .social-media i {
+    cursor: pointer;
+    margin: 0 1rem;
+    color: #999;
+    transition: 0.3s;
+    font-size: 0.9rem;
+  }
+
+  .footer .social-media i:hover {
+    color: #40ba37;
+  }
+
+  .footer a.site-logo {
+    font-size: 2rem;
+    color: #999;
+  }
+
+  .footer p {
+    letter-spacing: 1px;
+    color: #999;
+    margin: 0;
+  }
+
