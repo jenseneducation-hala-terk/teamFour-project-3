@@ -8,6 +8,7 @@
     ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/static/css/index.css" />
     <link rel="stylesheet" href="/static/css/signin.css" />
     <title>Sign In - Project 3</title>
   </head>
@@ -29,37 +30,52 @@
           </li>
         </ul>
       </nav>
+
       <form action="#" method="post">
-        
+
         <div class="form-header ">
           <h1>Sign in to TeamFour</h1>
         </div>
-             
+
         <div class="form-body ">
-    
+
           <label for="email">
            Email address
           </label>
           <input type="text" name="email" id="email" class="form-control input-block" tabindex="1" autocapitalize="off" autocorrect="off" autofocus="autofocus">
-    
+
           <label for="password">
             Password <span>------</span><a class="label-link" href="#">Forgot password?</a>
           </label>
           <input type="password" name="password" id="password" class="form-control form-control input-block" tabindex="2">
-          
-         
-                 
-    
+
+
+
+
           <input type="submit" name="commit" value="Sign in" tabindex="3" class="btn" >
         </div>
     </form>
-    
-    
-    
+
+
+
       <p >
         New to TeamFour?
-        <a  href="signup.html">Create an account</a>.
-      </p> 
+        <a  href="signup.ejs">Create an account</a>.
+      </p>
     </div>
+    <div class="wrapper">
+      <div class="footer">
+        <div class="social-media">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+        <a class="site-logo" href="/"><i class="fab fa-accusoft"></i></a>
+        <p>&copy;2019. All righs reserved. Made by FWK19S</p>
+      </div>
+    </div>
+    <script src="/static/app.js"></script>
   </body>
 </html>
